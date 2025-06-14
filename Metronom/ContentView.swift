@@ -27,12 +27,12 @@ struct ContentView: View {
                 Color.black.ignoresSafeArea()
 
                 VStack(spacing: 40) {
-                    Text("\(bpm) BPM")
+                    Text("\(bpm) SPM")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.white)
 
-                    Picker("BPM", selection: $bpm) {
+                    Picker("SPM", selection: $bpm) {
                         ForEach(bpmRange, id: \.self) { bpm in
                             Text("\(bpm)")
                                 .foregroundColor(.white)
